@@ -1,4 +1,4 @@
-# 🏥 LifeLine+ — Smart Hospital Management System
+# 🏥 LifeLine+  Smart Hospital Management System
 
 A Python-based hospital management system that supports patient registration, appointment booking, payments, emergency response, indoor navigation, GPS distance calculation, and an AI-based symptom checker.
 
