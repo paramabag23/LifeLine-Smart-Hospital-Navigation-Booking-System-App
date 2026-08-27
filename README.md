@@ -2,15 +2,18 @@
 A Python-based hospital management system that supports patient registration, appointment booking, payments, emergency response, indoor navigation, GPS distance calculation, and an AI-based symptom checker.
 The project currently contains two separate implementations of the system. Please read the Project Structure section below before running anything, as they are not interchangeable.
 ---
+
+<img width="793" height="715" alt="Screenshot 2026-08-27 213052" src="https://github.com/user-attachments/assets/52ea02f6-f800-4c22-b4dd-bebee28efab7" />
+
+<img width="1445" height="847" alt="Screenshot 2026-08-27 213138" src="https://github.com/user-attachments/assets/17d28e14-489b-4f7a-b07b-ec6fffa97b97" />
+
 📌 Overview
 Component	Interface	Entry Point	Status
 Desktop GUI App	Tkinter (windowed)	`main.py` or `database.py`	✅ Complete, self-contained
 Console Module Set	Terminal / CLI (text menus)	`setup.py` (setup only)	⚠️ Modules complete, but no CLI entry point ties login → dashboard together yet
 Both versions implement the same feature set but use different, incompatible database schemas (see Database Schema). Do not mix and match — pick one version and run its own setup.
 ---
-<img width="793" height="715" alt="Screenshot 2026-08-27 213052" src="https://github.com/user-attachments/assets/52ea02f6-f800-4c22-b4dd-bebee28efab7" />
 
-<img width="1445" height="847" alt="Screenshot 2026-08-27 213138" src="https://github.com/user-attachments/assets/17d28e14-489b-4f7a-b07b-ec6fffa97b97" />
 
 
 ✨ Features
