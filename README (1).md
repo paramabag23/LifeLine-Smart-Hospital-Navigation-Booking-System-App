@@ -6,6 +6,12 @@ The project currently contains **two separate implementations** of the system. P
 
 ---
 
+
+<img width="793" height="715" alt="Screenshot 2026-08-27 213052" src="https://github.com/user-attachments/assets/acff74ec-3e32-4cdd-af59-823321430d7e" />
+
+<img width="1445" height="847" alt="Screenshot 2026-08-27 213138" src="https://github.com/user-attachments/assets/34a3c868-c9f9-4ca9-81af-9ffa2c80b5b8" />
+
+
 ## 📌 Overview
 
 | Component | Interface | Entry Point | Status |
