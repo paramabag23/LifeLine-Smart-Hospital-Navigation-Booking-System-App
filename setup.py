@@ -1,6 +1,19 @@
 import sqlite3
 import os
 
+def ensure_payment_schema():
+    """Support older databases created with created_at instead of payment_date."""
+    conn = sqlite3.connect('hospital.db')
+    cursor = conn.cursor()
+    columns = [row[1] for row in cursor.execute('PRAGMA table_info(payments)')]
+    if 'payment_date' not in columns:
+        cursor.execute('ALTER TABLE payments ADD COLUMN payment_date TEXT')
+    if 'created_at' not in columns:
+        cursor.execute('ALTER TABLE payments ADD COLUMN created_at TEXT')
+    conn.commit()
+    conn.close()
+
+
 def create_database():
     """Create database and all tables"""
     conn = sqlite3.connect('hospital.db')
@@ -75,6 +88,7 @@ def create_database():
     
     conn.commit()
     conn.close()
+    ensure_payment_schema()
     print("✅ Database 'hospital.db' created successfully!")
     print("✅ All tables created!")
 
